@@ -10,6 +10,6 @@ setup(
     ],
     entry_points="""
         [console_scripts]
-        isal=isal.cli:cli
+        isal=cli:cli
     """,
 )
