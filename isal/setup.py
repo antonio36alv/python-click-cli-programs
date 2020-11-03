@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="isal",
     version="0.1",
-    packages=["isal"],
+    py_modules=["isal"],
     include_package_data=True,
     install_requires=[
         "click"
