@@ -1,0 +1,3 @@
+# SVG Code Editor
+
+One day I found [this](https://css-tricks.com/libraries-for-svg-drawing-animations/) neat article on SVG animations. One of the first steps invovled is getting the code from the SVG and editing it so it can be animated. I didn't expect there to be so many lines to the code of an SVG file (never really dealt much with SVG myself). So I figure I could make a script to edit it automatically for future use and well here we are. I just started this made this script (Nov. 12th 2020) so it is still very young. With time anything that does not work will be fixed.
