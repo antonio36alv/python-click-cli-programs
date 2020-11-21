@@ -68,9 +68,13 @@ def createNewConnection():
     command = input("Enter your command: ")
     if click.confirm("Connect/Test Connection? "):
         system(command)
-    if click.confirm("Happy? Did that go well? If yes it will be saved."):
+        if click.confirm("Happy? Did that go well? If yes it will be saved."):
+            connection = dbConnection(name=name, db_type=db_type, command=command, description=description)
+            connection.save()
+    if click.confirm(f"Add command: '{command}'?"):
         connection = dbConnection(name=name, db_type=db_type, command=command, description=description)
         connection.save()
+        click.echo("saved!")
 
 # if __name__ == "__main__":
 #     cli()
